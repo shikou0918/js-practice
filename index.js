@@ -31,13 +31,30 @@ const test = (arg) => {
   if (inoki.length > arg) {
     console.log('ボンバイエ！');
   } else {
-    console.log('ボンバ')
+    console.log('ボンバ');
   }
 };
 
-// オブジェクト
+// オブジェクト 複数の値を持つことができる
 const unko2 = {
   color: 'pink',
   size: 'large',
-  purfume: 'mint'
-}
+  purfume: 'mint',
+  goToilet: () => {
+    console.log('Hello world!');
+  }
+};
+
+// console.log(unko2.goToilet());
+
+// windowはWebブラウザ全体のオブジェクト
+console.log(window.innerWidth);
+
+// documentは表示しているページ全体のオブジェクト
+console.log(document);
+
+// evenrtはユーザーがアクションしたタイミングで何かをしたいときに使う
+document.getElementsByTagName('button')[0].addEventListener('click', () => {
+  // 命令を書く
+  window.alert('Hello World!');
+});
