@@ -1,7 +1,7 @@
 // 変数
 let unko = 'Hello World!;'
 
-// unko = 'chinko';
+// unko = 'test';
 
 // 定数
 const bigUnko = 'Hello World! Hey!';
